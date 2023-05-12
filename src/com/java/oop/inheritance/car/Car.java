@@ -5,8 +5,8 @@ public class Car {
 	private Engine engine;
 	private String brand;
 	
-	public Car(Engine engine, String brand) {
-		this.engine = engine;
+	public Car(double capacity, String brand) {
+		this.engine = new Engine(capacity);
 		this.brand = brand;
 	}
 	
@@ -36,8 +36,7 @@ public class Car {
 
 	@Override
 	public String toString() {
-		return "Car [engine=" + engine + ", brand=" + brand + ", getEngine()=" + getEngine() + ", getBrand()="
-				+ getBrand() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
-				+ super.toString() + "]";
+		String s = "The car brand is " + this.brand + "\n" + engine;
+		return s;
 	}
 }

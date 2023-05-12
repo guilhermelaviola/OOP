@@ -41,8 +41,12 @@ public class Engine {
 
 	@Override
 	public String toString() {
-		return "Engine [capacity=" + capacity + ", on=" + on + ", getCapacity()=" + getCapacity() + ", isOn()=" + isOn()
-				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
-				+ "]";
+		String s = "The capacity is " + capacity + " and the engine is ";
+		if (this.on) {
+			s += "on.";
+		} else {
+			s += "off.";
+		}
+		return s;
 	}
 }
