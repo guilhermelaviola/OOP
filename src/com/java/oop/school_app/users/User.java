@@ -7,9 +7,11 @@ import com.java.oop.school_app.Adress;
 import com.java.oop.users.enums.UniversityUnit;
 import com.java.oop.users.enums.UserType;
 
+// Abstraction
 public class User {
 
-	public UUID id;
+	// Encapsulation
+	public int id;
 	public String firstName;
 	public String lastName;
 	public UserType userType;
@@ -17,7 +19,7 @@ public class User {
 	public Adress adress;
 	public UniversityUnit universityUnit;
 	
-	public User(UUID id, String firstName, String lastName, UserType userType, Date memberSince, Adress adress,
+	public User(int id, String firstName, String lastName, UserType userType, Date memberSince, Adress adress,
 			UniversityUnit universityUnit) {
 		this.id = id;
 		this.firstName = firstName;
@@ -28,7 +30,7 @@ public class User {
 		this.universityUnit = universityUnit;
 	}
 
-	public UUID getId() {
+	public int getId() {
 		return id;
 	}
 
@@ -56,7 +58,7 @@ public class User {
 		return universityUnit;
 	}
 
-	public void setId(UUID id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

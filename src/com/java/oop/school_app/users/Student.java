@@ -10,13 +10,14 @@ import com.java.oop.school_app.Subjects;
 import com.java.oop.users.enums.UniversityUnit;
 import com.java.oop.users.enums.UserType;
 
+// Encapsulation and Inheritance
 public class Student extends User {
 
 	public SchoolHistory schoolHistory;
 	public Subjects subjects;
 	public Grades grades;
 	
-	public Student(UUID id, String firstName, String lastName, UserType userType, Date memberSince, Adress adress,
+	public Student(int id, String firstName, String lastName, UserType userType, Date memberSince, Adress adress,
 			UniversityUnit universityUnit, SchoolHistory schoolHistory, Subjects subjects, Grades grades) {
 		super(id, firstName, lastName, userType, memberSince, adress, universityUnit);
 		this.schoolHistory = schoolHistory;

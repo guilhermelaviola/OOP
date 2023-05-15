@@ -7,12 +7,12 @@ public class Adress {
 	public int number;
 	public String neighborhood;
 	public String city;
-	public char state;
+	public String state;
 	public String country;
 	public String zipCode;
 	public HomeType homeType;
 	
-	public Adress(String street, int number, String neighborhood, String city, char state, String country,
+	public Adress(String street, int number, String neighborhood, String city, String state, String country,
 			String zipCode, HomeType homeType) {
 		this.street = street;
 		this.number = number;
@@ -40,7 +40,7 @@ public class Adress {
 		return city;
 	}
 
-	public char getState() {
+	public String getState() {
 		return state;
 	}
 
@@ -72,7 +72,7 @@ public class Adress {
 		this.city = city;
 	}
 
-	public void setState(char state) {
+	public void setState(String state) {
 		this.state = state;
 	}
 

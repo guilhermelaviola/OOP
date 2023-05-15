@@ -14,8 +14,9 @@ public class Professor extends User {
 	public Resume resume;
 	public Subjects subjectsTaught;
 	
-	public Professor(UUID id, String firstName, String lastName, UserType userType, Date memberSince, Adress adress,
+	public Professor(int id, String firstName, String lastName, UserType userType, Date memberSince, Adress adress,
 			UniversityUnit universityUnit, Resume resume, Subjects subjectsTaught) {
+		super(id, firstName, lastName, userType, memberSince, adress, universityUnit);
 		this.resume = resume;
 		this.subjectsTaught = subjectsTaught;
 	}
@@ -40,4 +41,4 @@ public class Professor extends User {
 	public String toString() {
 		return "Professor [resume=" + resume + ", subjectsTaught=" + subjectsTaught + "]";
 	}
- )
+}
