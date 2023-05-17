@@ -45,4 +45,32 @@ public class HumanResources {
 		}
 		return sum;
 	}
+	
+	public String mostExpensiveName() {
+		int expensive = 0;
+		for (int i=0; i<amount; i++) {
+			if (employees[expensive].getSalary()<employees[i].getSalary()) {
+				expensive=i;
+			}
+		}
+		return employees[expensive].getName();
+	}
+	
+	public int mostExpensivePosition() {
+		int expensive = 0;
+		for (int i=0; i<amount; i++) {
+			if (employees[expensive].getSalary()<employees[i].getSalary()) {
+				expensive=i;
+			}
+		}
+		return expensive;
+	}
+	
+	public void employeeFunction(String function) {
+		for (int i=0; i<amount; i++) {
+			if (employees[i].getFunction().equalsIgnoreCase(function)) {
+				System.out.println(employees[i].getName());
+			}
+		}
+	}
 }
