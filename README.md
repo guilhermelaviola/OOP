@@ -8,6 +8,7 @@ The four principles of object-oriented programming are encapsulation, abstractio
 
 ### Abstraction
 In object-oriented programming, abstraction is one of three central principles (along with encapsulation and inheritance). Through the process of abstraction, a programmer hides all but the relevant data about an object in order to reduce complexity and increase efficiency.
+![image](https://github.com/guilhermelaviola/OOP/assets/31170255/1fc72aeb-52b8-41af-9e80-0d60ad4a8ca4)
 
 ### Encapsulation
 In object-oriented computer programming (OOP) languages, the notion of encapsulation (or OOP Encapsulation) refers to the bundling of data, along with the methods that operate on that data, into a single unit.
