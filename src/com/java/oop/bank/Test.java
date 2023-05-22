@@ -196,7 +196,7 @@ public class Test extends JFrame{
     	client.balance=0;
     	client.name=nameTxt.getText();
     	client.idNumber = idTxt.getText();
-        output.setText("Cliente Cadastrado");
+        output.setText("Client registered successfully.");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -249,7 +249,7 @@ public class Test extends JFrame{
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Bank().setVisible(true);
+                new Test().setVisible(true);
             }
         });
     }
